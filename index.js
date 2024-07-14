@@ -3,6 +3,11 @@ const list = document.getElementById("list");
 //Target user input
 const userInput = document.getElementById("user-input");
 
+function removeFromList(event) {
+  const listElement = event.target.parentElement;
+  list.removeChild(listElement);
+}
+
 //create new element
 //add user input as text
 //add element to list
