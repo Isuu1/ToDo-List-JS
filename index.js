@@ -11,6 +11,13 @@ function addToList() {
   //Take user input value
   newElement.textContent = userInput.value;
   list.appendChild(newElement);
+  //Add delete button to list element
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "x";
+  //Take user input value
+  newElement.appendChild(deleteBtn);
+  //Add event listener for delete button
+  deleteBtn.addEventListener("click", removeFromList);
   //Reset user input after adding element to list
   userInput.value = "";
 }
