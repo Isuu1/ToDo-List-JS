@@ -8,11 +8,17 @@ function removeFromList(event) {
   list.removeChild(listElement);
 }
 
+function makeTaskCompleted(event) {
+  event.target.classList.add("completed");
+}
+
 //create new element
 //add user input as text
 //add element to list
 function addToList() {
   const newElement = document.createElement("li");
+  //Add event listener to completing task
+  newElement.addEventListener("click", makeTaskCompleted);
   //Take user input value
   newElement.textContent = userInput.value;
   list.appendChild(newElement);
