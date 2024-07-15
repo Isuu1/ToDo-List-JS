@@ -12,6 +12,10 @@ function removeFromList(event) {
 function makeTaskCompleted(event) {
   const listElement = event.target.parentElement;
   listElement.classList.add("completed");
+  const statusInfo = document.createElement("p");
+  statusInfo.textContent = "Closed";
+  statusInfo.classList.add("task-status-completed");
+  listElement.appendChild(statusInfo);
 }
 
 //create new element
@@ -34,10 +38,14 @@ function addToList() {
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Remove";
   deleteBtn.classList.add("delete-btn");
-  //Take user input value
+  //Add delete button to list element
   newElement.appendChild(deleteBtn);
   //Add event listener for delete button
   deleteBtn.addEventListener("click", removeFromList);
+  const taskStatus = document.createElement("p");
+  taskStatus.textContent = "Open";
+  taskStatus.classList.add("task-status");
+  newElement.appendChild(taskStatus);
   //Reset user input after adding element to list
   userInput.value = "";
 }

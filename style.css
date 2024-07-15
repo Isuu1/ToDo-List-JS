@@ -84,6 +84,17 @@ button {
   border: 0;
 }
 
+.task-status {
+  position: absolute;
+  right: 0.2rem;
+}
+
+.task-status-completed {
+  position: absolute;
+  right: 0.2rem;
+  background: #a5a5a5;
+}
+
 .add-to-list {
   border-radius: 13px;
   padding: 0.7rem;
@@ -96,5 +107,5 @@ button {
 }
 
 .completed {
-  text-decoration: line-through;
+  background: #a5a5a5;
 }
