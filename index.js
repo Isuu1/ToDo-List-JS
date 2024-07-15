@@ -1,5 +1,6 @@
 //Target list element
 const list = document.getElementById("list");
+list.querySelectorAll("li");
 //Target user input
 const userInput = document.getElementById("user-input");
 
@@ -17,6 +18,7 @@ function makeTaskCompleted(event) {
 //add element to list
 function addToList() {
   const newElement = document.createElement("li");
+  newElement.classList.add("list-element");
   //Add event listener to completing task
   newElement.addEventListener("click", makeTaskCompleted);
   //Take user input value
@@ -25,6 +27,7 @@ function addToList() {
   //Add delete button to list element
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "x";
+  deleteBtn.classList.add("delete-btn");
   //Take user input value
   newElement.appendChild(deleteBtn);
   //Add event listener for delete button

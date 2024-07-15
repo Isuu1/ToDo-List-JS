@@ -9,4 +9,8 @@
 - [x] Create a function to add item
 - [x] Create a function to remove item
 - [x] Create a function to complete task
-- [ ] Add styling
+- [x] Add styling
+
+### Extra tasks:
+
+- [ ] Improve basic styling (add bulletpoints to list elements)

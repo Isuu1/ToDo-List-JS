@@ -11,11 +11,17 @@
   </head>
   <body>
     <main class="main">
-      <h1>ToDo List</h1>
-      <input type="text" placeholder="Add new task" id="user-input" />
-      <button class="add-to-list" onclick="addToList()">
-        Add to list
-      </button>
+      <h1 class="title">ToDo List</h1>
+      <div style="position: relative; display: flex">
+        <input
+          type="text"
+          placeholder="Add new task"
+          id="user-input"
+        />
+        <button class="add-to-list" onclick="addToList()">
+          Add +
+        </button>
+      </div>
       <ul id="list"></ul>
     </main>
     <script src="index.js"></script>
