@@ -10,7 +10,8 @@ function removeFromList(event) {
 }
 
 function makeTaskCompleted(event) {
-  event.target.classList.add("completed");
+  const listElement = event.target.parentElement;
+  listElement.classList.add("completed");
 }
 
 //create new element
@@ -19,14 +20,19 @@ function makeTaskCompleted(event) {
 function addToList() {
   const newElement = document.createElement("li");
   newElement.classList.add("list-element");
-  //Add event listener to completing task
-  newElement.addEventListener("click", makeTaskCompleted);
   //Take user input value
   newElement.textContent = userInput.value;
   list.appendChild(newElement);
+  //Add checkbox to list element
+  const checkbox = document.createElement("input");
+  checkbox.classList.add("checkbox");
+  checkbox.setAttribute("type", "checkbox");
+  newElement.prepend(checkbox);
+  //Add event listener to completing task
+  checkbox.addEventListener("click", makeTaskCompleted);
   //Add delete button to list element
   const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "x";
+  deleteBtn.textContent = "Open";
   deleteBtn.classList.add("delete-btn");
   //Take user input value
   newElement.appendChild(deleteBtn);

@@ -11,6 +11,14 @@ body {
   background: linear-gradient(45deg, #ad1cf0, #521fdf);
 }
 
+li {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
 .title {
   margin: 1rem auto;
 }
@@ -19,53 +27,71 @@ body {
   box-sizing: border-box;
   margin: auto;
   height: auto;
-  width: 35%;
+  max-width: 500px;
   color: #252525;
-  background: #ffffffdc;
+  background: #f9f9f9;
   border-radius: 20px;
   padding: 1rem;
   backdrop-filter: blur(10px);
 }
 
 #user-input {
-  background: #ffffffdc;
+  background: #ffffff;
   color: #252525;
-  border-radius: 20px;
+  border-radius: 13px;
   padding: 0.7rem;
   flex: 1 1;
   border: 0;
   outline: 0;
   opacity: 0.8;
+  font-size: 1rem;
 }
 
-#list {
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.7rem;
 }
 
+#list {
+  padding: 0 0 0.7rem 0;
+}
+
 .list-element {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ffffff73;
-  color: #252525;
+  color: #000000;
+  background: #ffffff;
+  padding: 0.6rem;
+  border-radius: 13px;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  margin-right: 0.3rem;
 }
 
 .delete-btn {
+  position: absolute;
+  right: 0.7rem;
   background: transparent;
   padding: 0.2rem;
   color: red;
-  font-size: 1.4rem;
   border: 0;
+  float: right;
 }
 
 .add-to-list {
-  border-radius: 20px;
+  border-radius: 13px;
   padding: 0.7rem;
   position: absolute;
   right: 0;
   border: 0;
-  background: #19c55b;
-  color: #fff;
+  background: #27b13e;
+  color: #ffffff;
   font-weight: bold;
 }
 

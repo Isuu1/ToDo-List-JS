@@ -13,4 +13,6 @@
 
 ### Extra tasks:
 
-- [ ] Improve basic styling (add bulletpoints to list elements)
+- [x] Improve basic styling (add bulletpoints to list elements)
+- [ ] Keep improving styling
+- [ ] Add a date
