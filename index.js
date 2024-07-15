@@ -4,6 +4,11 @@ list.querySelectorAll("li");
 //Target user input
 const userInput = document.getElementById("user-input");
 
+//Creating todays date
+const date = document.getElementById("date");
+const todayDate = new Date();
+date.innerHTML = "Today is: " + todayDate.toLocaleDateString();
+
 function removeFromList(event) {
   const listElement = event.target.parentElement;
   list.removeChild(listElement);
