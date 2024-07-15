@@ -32,7 +32,7 @@ function addToList() {
   checkbox.addEventListener("click", makeTaskCompleted);
   //Add delete button to list element
   const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "Open";
+  deleteBtn.textContent = "Remove";
   deleteBtn.classList.add("delete-btn");
   //Take user input value
   newElement.appendChild(deleteBtn);
