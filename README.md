@@ -16,3 +16,4 @@
 - [x] Improve basic styling (add bulletpoints to list elements)
 - [ ] Keep improving styling
 - [ ] Add a date
+- [ ] Add task status
